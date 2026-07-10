@@ -819,6 +819,15 @@ input:focus {
   color: var(--azul-principal);
 }
 
+.result-disclaimer {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--gris-texto);
+  margin-top: 8px;
+  text-align: center;
+  line-height: 1.4;
+}
+
 @media (min-width: 860px) {
   .form-panel {
     grid-template-columns: 1fr 1fr;
