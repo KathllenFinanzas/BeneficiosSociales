@@ -713,8 +713,12 @@ gratForm.addEventListener('submit', (event) => {
 
   // Deduction for unexcused absences
   let descuentoDias = 0;
+  const gratInasistenciasCard = document.getElementById('gratInasistenciasCard');
   if (diasNoLaborados > 0) {
     descuentoDias = (((remuneracionComputable * factorRegimen) / 6) / 30) * diasNoLaborados;
+    if (gratInasistenciasCard) gratInasistenciasCard.style.display = 'grid';
+  }else{
+    if (gratInasistenciasCard) gratInasistenciasCard.style.display = 'none';
   }
 
   // Total
